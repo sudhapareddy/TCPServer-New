@@ -4,10 +4,10 @@ require("dotenv").config(); // safe for local, ignored in Railway
 
 const mongoURI = process.env.MONGO_URI;
 
-console.log("MONGO_URI (sanitized):", mongoURI?.slice(0, 30) + "...");
+// console.log("MONGO_URI (sanitized):", mongoURI?.slice(0, 30) + "...");
 
-console.log("🔍 MONGO_URI (raw):", process.env.MONGO_URI);
-console.log("✅ Type of MONGO_URI:", typeof process.env.MONGO_URI);
+// console.log("🔍 MONGO_URI (raw):", process.env.MONGO_URI);
+// console.log("✅ Type of MONGO_URI:", typeof process.env.MONGO_URI);
 
 if (!mongoURI) {
   console.error("❌ MONGO_URI is not defined");
