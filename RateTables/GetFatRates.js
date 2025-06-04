@@ -116,6 +116,7 @@ async function sendFatAndRateValues(command, message, socket, deviceState) {
     const responseData = `${command}:${socket.deviceId}${fatTableId}${minFat}${maxFat}${fatEffectiveDate}${ratesData}!`;
 
     console.log("📤 Writing to socket:", responseData);
+
     socket.write(responseData + "\n");
   } catch (error) {
     console.error(`❌ ${milkType} CSV Read Error:`, error.message);

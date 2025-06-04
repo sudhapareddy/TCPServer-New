@@ -14,5 +14,11 @@
     "mongodb": "^6.15.0",
     "mongoose": "^8.13.0",
     "mysql": "^2.18.1"
-  }
+  },
+  "main": "Add_Transaction_Records.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
